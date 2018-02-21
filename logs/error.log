@@ -1,0 +1,768 @@
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask\app.py:1560
+        Module:             app
+        Function:           log_exception
+        Time:               2018-02-03 05:28:18,006
+
+        Message:
+
+        Exception on /captcha [GET]
+        
+Traceback (most recent call last):
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\flask\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 41, in _response
+    buf = t.start(font_type=self.font)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 129, in start
+    code_img = self.create_validate_code()
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 78, in create_validate_code
+    width, height, fg_color)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 114, in create_strs
+    font = ImageFont.truetype(font_type, font_size)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 260, in truetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 143, in __init__
+    self.font = core.getfont(font, size, index, encoding, layout_engine=layout_engine)
+OSError: cannot open resource
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask_maple\error.py:36
+        Module:             error
+        Function:           error
+        Time:               2018-02-03 05:28:18,119
+
+        Message:
+
+        cannot open resource
+        
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask\app.py:1560
+        Module:             app
+        Function:           log_exception
+        Time:               2018-02-03 05:31:52,216
+
+        Message:
+
+        Exception on /captcha [GET]
+        
+Traceback (most recent call last):
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\flask\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 41, in _response
+    buf = t.start(font_type=self.font)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 129, in start
+    code_img = self.create_validate_code()
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 78, in create_validate_code
+    width, height, fg_color)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 114, in create_strs
+    font = ImageFont.truetype(font_type, font_size)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 260, in truetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 143, in __init__
+    self.font = core.getfont(font, size, index, encoding, layout_engine=layout_engine)
+OSError: cannot open resource
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask_maple\error.py:36
+        Module:             error
+        Function:           error
+        Time:               2018-02-03 05:31:52,226
+
+        Message:
+
+        cannot open resource
+        
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask\app.py:1560
+        Module:             app
+        Function:           log_exception
+        Time:               2018-02-03 05:32:55,524
+
+        Message:
+
+        Exception on /captcha [GET]
+        
+Traceback (most recent call last):
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\flask\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 41, in _response
+    buf = t.start(font_type=self.font)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 129, in start
+    code_img = self.create_validate_code()
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 78, in create_validate_code
+    width, height, fg_color)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 114, in create_strs
+    font = ImageFont.truetype(font_type, font_size)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 260, in truetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 143, in __init__
+    self.font = core.getfont(font, size, index, encoding, layout_engine=layout_engine)
+OSError: cannot open resource
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask_maple\error.py:36
+        Module:             error
+        Function:           error
+        Time:               2018-02-03 05:32:55,539
+
+        Message:
+
+        cannot open resource
+        
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask\app.py:1560
+        Module:             app
+        Function:           log_exception
+        Time:               2018-02-03 05:35:10,592
+
+        Message:
+
+        Exception on /captcha [GET]
+        
+Traceback (most recent call last):
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\flask\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 41, in _response
+    buf = t.start(font_type=self.font)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 129, in start
+    code_img = self.create_validate_code()
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 78, in create_validate_code
+    width, height, fg_color)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 114, in create_strs
+    font = ImageFont.truetype(font_type, font_size)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 260, in truetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 143, in __init__
+    self.font = core.getfont(font, size, index, encoding, layout_engine=layout_engine)
+OSError: cannot open resource
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask_maple\error.py:36
+        Module:             error
+        Function:           error
+        Time:               2018-02-03 05:35:10,598
+
+        Message:
+
+        cannot open resource
+        
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask\app.py:1560
+        Module:             app
+        Function:           log_exception
+        Time:               2018-02-03 05:35:10,747
+
+        Message:
+
+        Exception on /captcha [GET]
+        
+Traceback (most recent call last):
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\flask\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 41, in _response
+    buf = t.start(font_type=self.font)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 129, in start
+    code_img = self.create_validate_code()
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 78, in create_validate_code
+    width, height, fg_color)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 114, in create_strs
+    font = ImageFont.truetype(font_type, font_size)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 260, in truetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 143, in __init__
+    self.font = core.getfont(font, size, index, encoding, layout_engine=layout_engine)
+OSError: cannot open resource
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask_maple\error.py:36
+        Module:             error
+        Function:           error
+        Time:               2018-02-03 05:35:10,751
+
+        Message:
+
+        cannot open resource
+        
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask\app.py:1560
+        Module:             app
+        Function:           log_exception
+        Time:               2018-02-03 06:02:03,529
+
+        Message:
+
+        Exception on /captcha [GET]
+        
+Traceback (most recent call last):
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\flask\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 41, in _response
+    buf = t.start(font_type=self.font)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 129, in start
+    code_img = self.create_validate_code()
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 78, in create_validate_code
+    width, height, fg_color)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 114, in create_strs
+    font = ImageFont.truetype(font_type, font_size)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 260, in truetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 143, in __init__
+    self.font = core.getfont(font, size, index, encoding, layout_engine=layout_engine)
+OSError: cannot open resource
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask_maple\error.py:36
+        Module:             error
+        Function:           error
+        Time:               2018-02-03 06:02:03,546
+
+        Message:
+
+        cannot open resource
+        
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask\app.py:1560
+        Module:             app
+        Function:           log_exception
+        Time:               2018-02-03 06:02:05,306
+
+        Message:
+
+        Exception on /captcha [GET]
+        
+Traceback (most recent call last):
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\flask\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 41, in _response
+    buf = t.start(font_type=self.font)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 129, in start
+    code_img = self.create_validate_code()
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 78, in create_validate_code
+    width, height, fg_color)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 114, in create_strs
+    font = ImageFont.truetype(font_type, font_size)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 260, in truetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 143, in __init__
+    self.font = core.getfont(font, size, index, encoding, layout_engine=layout_engine)
+OSError: cannot open resource
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask_maple\error.py:36
+        Module:             error
+        Function:           error
+        Time:               2018-02-03 06:02:05,329
+
+        Message:
+
+        cannot open resource
+        
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask\app.py:1560
+        Module:             app
+        Function:           log_exception
+        Time:               2018-02-03 06:02:06,144
+
+        Message:
+
+        Exception on /captcha [GET]
+        
+Traceback (most recent call last):
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\flask\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 41, in _response
+    buf = t.start(font_type=self.font)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 129, in start
+    code_img = self.create_validate_code()
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 78, in create_validate_code
+    width, height, fg_color)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 114, in create_strs
+    font = ImageFont.truetype(font_type, font_size)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 260, in truetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 143, in __init__
+    self.font = core.getfont(font, size, index, encoding, layout_engine=layout_engine)
+OSError: cannot open resource
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask_maple\error.py:36
+        Module:             error
+        Function:           error
+        Time:               2018-02-03 06:02:06,150
+
+        Message:
+
+        cannot open resource
+        
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask\app.py:1560
+        Module:             app
+        Function:           log_exception
+        Time:               2018-02-03 06:02:06,915
+
+        Message:
+
+        Exception on /captcha [GET]
+        
+Traceback (most recent call last):
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\flask\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 41, in _response
+    buf = t.start(font_type=self.font)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 129, in start
+    code_img = self.create_validate_code()
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 78, in create_validate_code
+    width, height, fg_color)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 114, in create_strs
+    font = ImageFont.truetype(font_type, font_size)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 260, in truetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 143, in __init__
+    self.font = core.getfont(font, size, index, encoding, layout_engine=layout_engine)
+OSError: cannot open resource
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask_maple\error.py:36
+        Module:             error
+        Function:           error
+        Time:               2018-02-03 06:02:06,927
+
+        Message:
+
+        cannot open resource
+        
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask\app.py:1560
+        Module:             app
+        Function:           log_exception
+        Time:               2018-02-03 06:02:24,519
+
+        Message:
+
+        Exception on /captcha [GET]
+        
+Traceback (most recent call last):
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\flask\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 41, in _response
+    buf = t.start(font_type=self.font)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 129, in start
+    code_img = self.create_validate_code()
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 78, in create_validate_code
+    width, height, fg_color)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 114, in create_strs
+    font = ImageFont.truetype(font_type, font_size)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 260, in truetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 143, in __init__
+    self.font = core.getfont(font, size, index, encoding, layout_engine=layout_engine)
+OSError: cannot open resource
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask_maple\error.py:36
+        Module:             error
+        Function:           error
+        Time:               2018-02-03 06:02:24,530
+
+        Message:
+
+        cannot open resource
+        
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask\app.py:1560
+        Module:             app
+        Function:           log_exception
+        Time:               2018-02-03 06:02:47,781
+
+        Message:
+
+        Exception on /captcha [GET]
+        
+Traceback (most recent call last):
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\flask\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 41, in _response
+    buf = t.start(font_type=self.font)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 129, in start
+    code_img = self.create_validate_code()
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 78, in create_validate_code
+    width, height, fg_color)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 114, in create_strs
+    font = ImageFont.truetype(font_type, font_size)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 260, in truetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 143, in __init__
+    self.font = core.getfont(font, size, index, encoding, layout_engine=layout_engine)
+OSError: cannot open resource
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask_maple\error.py:36
+        Module:             error
+        Function:           error
+        Time:               2018-02-03 06:02:47,792
+
+        Message:
+
+        cannot open resource
+        
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask\app.py:1560
+        Module:             app
+        Function:           log_exception
+        Time:               2018-02-03 06:04:26,579
+
+        Message:
+
+        Exception on /captcha [GET]
+        
+Traceback (most recent call last):
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\flask\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 41, in _response
+    buf = t.start(font_type=self.font)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 129, in start
+    code_img = self.create_validate_code()
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 78, in create_validate_code
+    width, height, fg_color)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 114, in create_strs
+    font = ImageFont.truetype(font_type, font_size)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 260, in truetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 143, in __init__
+    self.font = core.getfont(font, size, index, encoding, layout_engine=layout_engine)
+OSError: cannot open resource
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask_maple\error.py:36
+        Module:             error
+        Function:           error
+        Time:               2018-02-03 06:04:26,594
+
+        Message:
+
+        cannot open resource
+        
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask\app.py:1560
+        Module:             app
+        Function:           log_exception
+        Time:               2018-02-03 06:09:56,809
+
+        Message:
+
+        Exception on /captcha [GET]
+        
+Traceback (most recent call last):
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\flask\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 41, in _response
+    buf = t.start(font_type=self.font)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 129, in start
+    code_img = self.create_validate_code()
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 78, in create_validate_code
+    width, height, fg_color)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 114, in create_strs
+    font = ImageFont.truetype(font_type, font_size)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 260, in truetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 143, in __init__
+    self.font = core.getfont(font, size, index, encoding, layout_engine=layout_engine)
+OSError: cannot open resource
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask_maple\error.py:36
+        Module:             error
+        Function:           error
+        Time:               2018-02-03 06:09:56,822
+
+        Message:
+
+        cannot open resource
+        
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask\app.py:1560
+        Module:             app
+        Function:           log_exception
+        Time:               2018-02-03 06:09:57,909
+
+        Message:
+
+        Exception on /captcha [GET]
+        
+Traceback (most recent call last):
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\flask\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 41, in _response
+    buf = t.start(font_type=self.font)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 129, in start
+    code_img = self.create_validate_code()
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 78, in create_validate_code
+    width, height, fg_color)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 114, in create_strs
+    font = ImageFont.truetype(font_type, font_size)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 260, in truetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 143, in __init__
+    self.font = core.getfont(font, size, index, encoding, layout_engine=layout_engine)
+OSError: cannot open resource
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask_maple\error.py:36
+        Module:             error
+        Function:           error
+        Time:               2018-02-03 06:09:57,915
+
+        Message:
+
+        cannot open resource
+        
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask\app.py:1560
+        Module:             app
+        Function:           log_exception
+        Time:               2018-02-03 06:10:06,262
+
+        Message:
+
+        Exception on /captcha [GET]
+        
+Traceback (most recent call last):
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\flask\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 41, in _response
+    buf = t.start(font_type=self.font)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 129, in start
+    code_img = self.create_validate_code()
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 78, in create_validate_code
+    width, height, fg_color)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 114, in create_strs
+    font = ImageFont.truetype(font_type, font_size)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 260, in truetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 143, in __init__
+    self.font = core.getfont(font, size, index, encoding, layout_engine=layout_engine)
+OSError: cannot open resource
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask_maple\error.py:36
+        Module:             error
+        Function:           error
+        Time:               2018-02-03 06:10:06,264
+
+        Message:
+
+        cannot open resource
+        
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask\app.py:1560
+        Module:             app
+        Function:           log_exception
+        Time:               2018-02-03 06:29:37,323
+
+        Message:
+
+        Exception on /captcha [GET]
+        
+Traceback (most recent call last):
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\flask\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\flask\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 41, in _response
+    buf = t.start(font_type=self.font)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 129, in start
+    code_img = self.create_validate_code()
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 78, in create_validate_code
+    width, height, fg_color)
+  File "C:\flask\venv\lib\site-packages\flask_maple\captcha.py", line 114, in create_strs
+    font = ImageFont.truetype(font_type, font_size)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 260, in truetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+  File "C:\flask\venv\lib\site-packages\PIL\ImageFont.py", line 143, in __init__
+    self.font = core.getfont(font, size, index, encoding, layout_engine=layout_engine)
+OSError: cannot open resource
+
+        Message type:       ERROR
+        Location:           C:\flask\venv\lib\site-packages\flask_maple\error.py:36
+        Module:             error
+        Function:           error
+        Time:               2018-02-03 06:29:37,337
+
+        Message:
+
+        cannot open resource
+        

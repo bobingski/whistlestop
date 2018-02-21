@@ -1,0 +1,12 @@
+{% macro header() -%}
+<a class="navbar-brand" href="{{ url_for('index.index') }}" style="color:#EB5424;">WhistleStop</a>
+{%- endmacro %}
+
+{% macro headerlist() -%}
+<ul class="nav navbar-nav">
+    <li><a href="{{ url_for('blog.bloglist') }}">{{_('Blog')}}</a></li>
+    
+    
+    <li><a href="{{ url_for('index.about') }}">{{_('About me')}}</a></li>
+</ul>
+{%- endmacro %}

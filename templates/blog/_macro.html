@@ -1,0 +1,75 @@
+{% macro header() -%}
+<a class="navbar-brand" href="{{ url_for('blog.bloglist') }}" style="color:#EB5424;">{{_('BLOG')}}</a>
+{%- endmacro %}
+
+{% macro headerlist() -%}
+<ul class="nav navbar-nav">
+  <li> <a href="{{ url_for('index.index') }}">{{_( 'HOME' )}}</a></li>
+  {% set categories = category_archives() %}
+  {% set cate_len = categories | length %}
+  {% for category,count in categories[:4] -%}
+  <li><a href="{{ url_for('blog.bloglist',category=category.name) }}">{{ category.name }}</a></li>
+  {%- endfor %}
+  {% if cate_len > 4 %}
+  <li>
+    <a href="#" class="dropdown-toggle" id="dropdown-more" data-toggle="dropdown">······</a>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown-more">
+      {% for category,count in categories[4:] -%}
+      <li role="presentation"><a role="menuitem" href="{{ url_for('blog.bloglist',category=category.name) }}">{{ category.name }}</a></li>
+      {%- endfor %}
+    </ul>
+  </li>
+  {% endif %}
+  <li> <a href="{{ url_for('blog.archive') }}">{{ _('Archives') }}</a></li>
+  <li> <a href="{{ url_for('blog.rss') }}">RSS</a></li>
+</ul>
+{%- endmacro %}
+
+{% macro tags() -%}
+{% for tag,count in tag_archives() %}
+<span class="label label-primary" style="display: inline-block;">
+  {%  set category = request.args.get('category') %}
+  <a href="{{ url_for('blog.bloglist',category=category,tag=tag.name) }}" style="color:#fff;">{{ tag.name }}
+    <span class="badge tag-badge">{{ count }}</span>
+  </a>
+</span>
+{% endfor %}
+{%- endmacro %}
+
+{% macro social() -%}
+<a href="https://github.com/honmaple" target="_blank" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>
+<a href="{{ url_for('blog.bloglist') }}" target="_blank" title="Blog"><i class="fa fa-leaf" aria-hidden="true"></i></a>
+
+<a href="jeanshi92@gmail.com" target="_blank" title="Gmail"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+<a href="" target="_blank" title="FaceBook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+{%- endmacro %}
+
+{% macro info(blog) -%}
+{% set author = blog.author.username %}
+{% set tags = blog.tags %}
+{% set category = blog.category.name %}
+<footer>
+  <i class="fa fa-calendar"></i>
+  <abbr title="{{ blog.created_at }}">
+    <span class="label label-success">{{ blog.created_at | timesince }}</span>
+  </abbr>
+  <address style="margin-top:8px">
+    <i class="fa fa-user"></i>
+    <a href="{{ url_for('blog.bloglist',author=author) }}" class="label label-primary">{{ author }}</a>
+  </address>
+  <address style="margin-top:-12px">
+    <i class="fa fa-leaf"></i>
+    <a href="{{ url_for('blog.bloglist',category=category) }}" class="label label-default" style="display: inline-block;">{{ category }}</a>
+  </address>
+  <address class="hidden-xs" style="margin-top:-12px">
+    <i class="fa fa-tags"></i>
+    {% for tag in tags %}
+    <a href="{{ url_for('blog.bloglist',tag=tag.name) }}" class="label label-tag" style="display: inline-block;">{{ tag.name }}</a>
+    {% endfor %}
+  </address>
+  <address style="margin-top:-12px">
+    <i class="fa fa-eye"></i>
+    <span class="label label-info">{{ blog.id | visit_total }}</span>
+  </address>
+</footer>
+{%- endmacro %}
