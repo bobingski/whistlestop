@@ -10,7 +10,7 @@
             </div>
             <div class="panel-body">
                 {% for blog in blogs.items %}
-                <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                <span class="fa fa-calendar" aria-hidden="true"></span>
                 <span>{{ blog.created_at | timesince }}</span>
                 <a href="{{ url_for('blog.blog',blogId=blog.id) }}">{{ blog.title }}</a>
                 <br />
