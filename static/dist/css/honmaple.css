@@ -173,12 +173,12 @@ div.category,ul.category,ul.list-group,li.list-group-item,nav.navbar,ul.dropdown
 }
 .blog {
     margin-bottom:15px;
-    background-color:rgba(255, 255, 255, 0.3);
+    background-color:rgba(255, 255, 255, 0.5);
     padding:5px 30px;
     border:1px solid #ddd;
     box-shadow:0px 0px 1px #ddd;
     border-radius: 3px;
 }
 .blog:hover {
-    background-color:rgba(255, 255, 255, 0.5);
+    background-color:rgba(255, 255, 255, 0.7);
 }
